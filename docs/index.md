@@ -3,6 +3,7 @@ November 26, 2022
 Foundations Of Programming: Python   
 Assignment 07  
 GitHub URL: https://github.com/jesscUW/IntroToProg-Python-Mod07  
+GitHub Webpage: https://jesscuw.github.io/IntroToProg-Python-Mod07/  
   
 # **Create a script that demonstrates how Pickling and Structured error handling work**  
   
