@@ -34,3 +34,9 @@ The first thing I did was import the pickle module (Figure 4).
 ![Screenshot of importing the pickle module](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure4.png "Screenshot of importing the pickle module")  
 Figure 4: Screenshot of importing the pickle module  
   
+### *Declaring variables*  
+In Data section, I declared two variables: “file_name_str” and “table_lst”. “file_name_str” is the data storage file “HomeInventory.dat”; “table_lst” is a list that contains rows of data (Figure 5).  
+  
+![Declaring the variables](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure5.png "Declaring the variables")  
+Figure 5: Declaring the variables  
+  
