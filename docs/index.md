@@ -40,3 +40,79 @@ In Data section, I declared two variables: “file_name_str” and “table_lst�
 ![Declaring the variables](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure5.png "Declaring the variables")  
 Figure 5: Declaring the variables  
   
+### *Processing*  
+Then I defined two functions in the Processing section. In the first function “save_data_to_file()”, a new binary file would be opened for appending data with the file access mode “ab”. I used the pickle.dump() function in the statement to pickle and store the data. The second function defined was “read_data_from_file()”. I used the pickle.load() function here for retrieving and unpickle the data (Figure 6).  
+  
+![Defining two functions for adding and extracting data in a binary file](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure6.png "Defining two functions for adding and extracting data in a binary file")  
+Figure 6: Defining two functions for adding and extracting data in a binary file  
+  
+### *Presentation*  
+I used the print() function to print out the message telling the user what they are going to do. Two variables “name” and “value” were named and assigned the user’s input. Then I added “value” again for the user to re-enter the item’s value. This statement was added because of the try-except block, which I will explain later. “table_lst” was assigned “[name, value]”.  
+  
+### *try/except*  
+As it happened to me in a previous assignment that I entered a word instead of a number and the program crashed while testing on my code, I added a try-except block for handling this error. The first thing I did was ask the user for the item’s value. A string would return and then be converted to a floating-point number. Then, I wrote an except clause with a statement to be executed if an exception is raised. I specified the exception type “ValueError” to be handled. If the user enters an unconvertible string, the exception is caught and the user will be informed “Please enter only numbers for Value!”.  
+  
+To continue with the code to the end (saving and retrieving the item and its value), I redeclared “value” here to request the user to enter the value again. The user can have another chance to confirm that they are entering a correct answer at this point (Figure7).  
+  
+![Getting user’s input and using a try statement with an except clause](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure7.png "Getting user’s input and using a try statement with an except clause")  
+Figure 7: Getting user’s input and using a try statement with an except clause  
+  
+The final step was calling the functions. I called “save_data_to_file()” to save the data in the binary file “HomeInventory.dat”; then I called the “read_data_from_file()” function in a print statement to read the data from the binary file and display the content (Figure 8).  
+  
+![Calling functions](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure8.png "Calling functions")  
+Figure 8: Calling functions  
+  
+### *Comments*  
+To help other people understand my code and also be able to remind myself my original intentions in the future, I added some notes. My script is shown as below (Figure 9):  
+```
+# ------------------------------------------------- #
+# Title: Assignment 07
+# Description: Demonstrating how Pickling and Structured error handling work
+# ChangeLog: (Who, When, What)
+# Jessica Chen, 11/26/2022, Created Script
+# ------------------------------------------------- #
+
+import pickle
+
+# -- Data -- #
+file_name_str = 'HomeInventory.dat'  # The name of the data file
+table_lst = []  # A list that acts as a "table" of rows
+
+
+# -- Processing -- #
+def save_data_to_file(file_name, list_of_data):
+    file = open(file_name, 'ab')
+    pickle.dump(list_of_data, file)
+    file.close()
+
+
+def read_data_from_file(file_name):
+    file = open(file_name, 'rb')
+    list_of_data = pickle.load(file)
+    file.close()
+    return list_of_data
+
+
+# -- Presentation -- #
+# Get Item Name and Value from user, then store the data in a list object
+print('Please type in a Name and Value for your household item.')
+name = str(input('Enter a Name: '))
+
+# try/except
+try:
+    value = float(input('Enter its Value: '))
+except ValueError:
+    print('Please enter only numbers for Value!')  # Display error message to user
+
+value = float(input('Please re-enter the value: '))  # For user to confirm the value / input in a correct format
+table_lst = [name, value]
+
+
+# Store the list object into a binary file
+save_data_to_file(file_name_str, table_lst)
+
+# Read the data from the file into a new list object and display the contents
+print(read_data_from_file(file_name_str))
+
+```  
+
