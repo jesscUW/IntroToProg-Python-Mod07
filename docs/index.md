@@ -115,4 +115,21 @@ save_data_to_file(file_name_str, table_lst)
 print(read_data_from_file(file_name_str))
 
 ```  
-
+Figure 9: Screenshot of my script  
+  
+## **Running the Script**  
+I ran Assignment07.py in both PyCharm and Shell. Following the prompt, I entered the item name, and then I typed in “aaa” for the Value to test if try-except block worked. The error message “Please enter only numbers for Value!” showed up. Then the program asked me to enter the value again. This time I correctly input a number “9.99”, and the program displayed my data “chair” and “9.99”. The script ran as expected (Figure 10 and 11); also, a binary file “HomeInventory.dat” was created and the data was written into the file (Figure 12).  
+  
+![Screenshot of Assignment07.py running in PyCharm](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure10.png "Screenshot of Assignment07.py running in PyCharm")  
+Figure 10: Screenshot of Assignment07.py running in PyCharm  
+  
+![Screenshot of Assignment07.py running in Shell](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure11.png "Screenshot of Assignment07.py running in Shell")  
+Figure 11: Screenshot of Assignment07.py running in Shell  
+  
+![Screenshot of the data written in the binary file](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure12.png "Screenshot of the data written in the binary file")  
+  
+## **Summary**  
+Through Module 07, I learned about Python’s pickle module and exception handling. When searching for the pages explaining these subjects, I found that “Python Pickling: https://www.tutorialspoint.com/python-pickling (external site)” and “Python Error Handling: https://www.w3schools.com/python/gloss_python_error_handling.asp (external site)” were helpful because they provided several simple and straightforward examples. After reading and watching the materials, I created a script demonstrating how pickling and structured error handling work.  
+  
+  
+  
