@@ -19,6 +19,6 @@ Figure 1: Creating a new project in PyCharm
 ### *Creating a Python Script*  
 I created a script file named “Assignment07.py” within my project (Figure 2).  
   
-![Creating a new Python script in the project](https://github.com/jesscUW/IntroToProg-Python-Mod07/blob/main/docs/Figure2.png "Creating a new Python script in the project")  
+![Creating a new Python script in the project](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure2.png "Creating a new Python script in the project")  
 Figure 2: Creating a new Python script in the project  
   
