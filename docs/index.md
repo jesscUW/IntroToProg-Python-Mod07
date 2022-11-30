@@ -13,7 +13,7 @@ In this assignment, I will document how I created a Python script that demonstra
 ### *Creating a New Project in PyCharm*  
 To begin with this assignment, I created a new project in PyCharm with the folder location “_PythonClass/Assignment07” (Figure 1).
   
-![Creating a new project in PyCharm](https://jesscuw.github.io/IntroToProg-Python-Mod07/blob/main/docs/Figure1.png "Creating a new project in PyCharm")  
+![Creating a new project in PyCharm](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure1.png "Creating a new project in PyCharm")  
 Figure 1: Creating a new project in PyCharm  
   
 ### *Creating a Python Script*  
