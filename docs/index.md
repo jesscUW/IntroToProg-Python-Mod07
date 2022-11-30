@@ -127,6 +127,7 @@ Figure 10: Screenshot of Assignment07.py running in PyCharm
 Figure 11: Screenshot of Assignment07.py running in Shell  
   
 ![Screenshot of the data written in the binary file](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure12.png "Screenshot of the data written in the binary file")  
+Figure 12: Screenshot of the data written in the binary file  
   
 ## **Summary**  
 Through Module 07, I learned about Python’s pickle module and exception handling. When searching for the pages explaining these subjects, I found that “Python Pickling: https://www.tutorialspoint.com/python-pickling (external site)” and “Python Error Handling: https://www.w3schools.com/python/gloss_python_error_handling.asp (external site)” were helpful because they provided several simple and straightforward examples. After reading and watching the materials, I created a script demonstrating how pickling and structured error handling work.  
