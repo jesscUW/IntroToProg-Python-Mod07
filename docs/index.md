@@ -25,12 +25,12 @@ Figure 2: Creating a new Python script in the project
 ### *Script Header*  
 Before adding code to my script, I put a header at the top to provide some basic information. (Figure 3).  
   
-![Screenshot of the header in my script] (https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure3.png "Screenshot of the header in my script")  
+![Screenshot of the header in my script](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure3.png "Screenshot of the header in my script")  
 Figure 3: Screenshot of the header in my script  
   
 ### *Pickling*  
 The first thing I did was import the pickle module (Figure 4).  
   
-![Screenshot of importing the pickle module] (https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure4.png "Screenshot of importing the pickle module")  
+![Screenshot of importing the pickle module](https://jesscuw.github.io/IntroToProg-Python-Mod07/Figure4.png "Screenshot of importing the pickle module")  
 Figure 4: Screenshot of importing the pickle module  
   
